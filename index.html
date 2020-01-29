@@ -135,7 +135,7 @@
       <div class="row">
         <div class="col text-center p-5">
           <h1 class="font-cursive text-white">We'd like to get to know you.</h1>
-          <a href="mailto:info@canopymedicalclinic.com" class="btn btn-lg btn-outline-light mt-2">Contact Us</a>
+          <button type="button" data-toggle="modal" data-target="#contactUsModal" class="btn btn-lg btn-outline-light mt-2">Contact Us</button>
         </div>
       </div>
     </div>
@@ -152,7 +152,7 @@
                 <h1 class="h4 mt-3 font-uppercase">Hours & Location</h1>
                 <p><span class="font-bold font-uppercase">Monday</span> & <span class="font-bold font-uppercase">Tuesday</span>
                 <br>9:00 AM to 5:00 PM</p>
-                <p class="font-bold font-uppercase">Wednesday through Friday by appointment</p>
+                <p><span class="font-bold font-uppercase">Wednesday</span> through <span class="font-bold font-uppercase">Friday</span><br /><span class="font-uppercase">By appointment</span></p>
                 <p><span class="font-bold font-uppercase">Sixth floor</span> of the <span class="font-bold font-uppercase">Professional Associates Building</span><br><address>100 4th St. S. Fargo  58103, Suite 608</address></p>
                 <p><span class="font-bold font-uppercase">Routes 14 & 16 Bus Shelters</span> at <span class="font-bold font-uppercase">Island Park & Fargo High Rise</span></p>
               </div>
@@ -176,6 +176,24 @@
         <div class="row pt-3 pb-3">
           <div class="col">
             <h1 class="h4 font-uppercase">Member of</h1>
+              <div class="memberships">
+                <a href="https://www.acog.org">
+                  <img height="80" alt="American College of Obstetricians and Gynecologists" id="acog">
+                </a>
+                <a href="https://www.npwh.org">
+                  <img height="80" class="pl-1" alt="Nurse Practitioners in Women's Health" id="npwh">
+                </a>
+                <a href="https://www.chooseheartland.com">
+                  <img height="80" class="pl-3 ml-1" alt="Heartland Healthcare Network" id="hhn">
+                </a>
+                <a href="http://www.ndwomen.org">
+                  <img height="100" class="pl-2" alt="North Dakota Women's Network" id="ndwn">
+                </a>
+                <a href="https://cannabisnurses.org">
+                  <img height="90" class="pl-1" alt="American Cannabis Nurse's Association" id="acna">
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -191,7 +209,7 @@
               <h1 class="h5 font-uppercase">Payment & Insurance</h1>
               <p>We accept most major insurance plans. It is always recommended to call your insurance company for details.</p>
               <p>Self-pay policy:<br>Initial visit/annual exams: $150-$300 based on health concerns, length, history, labs, etc.</p> 
-              <p>All self-pay patients must pay $100 at an intial exam and $50 at recheck paid upfront before the visit. Canopy will work with you to pay your bill. Payment plans are an option. Contact us for more information.</p>
+              <p>All self-pay patients must pay $75 at an intial exam and $50 at recheck paid upfront before the visit. Canopy will work with you to pay your bill. Payment plans are an option. Contact us for more information.</p>
             </div>
             <div class="col-md">
               <h1 class="h5 font-uppercase">Contact</h1>
@@ -208,6 +226,31 @@
           </div>
         </div>
       </footer>
+    </div>
+
+
+    <div class="modal fade" id="contactUsModal" tabindex="-1" role="dialog" aria-labelledby="contactLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="h5 modal-title" id="contactLabel">Contact Canopy</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <p><span class="icon icon-email"></span> Email: info@canopymedicalclinic.com</p>
+            <p><span class="icon icon-phone"></span> Phone: (701) 264-5200</p>
+            <p><span class="icon icon-fax"></span> Fax: (701) 999-2779</p>
+            <p><span class="icon icon-facebook"></span> 
+              <a href="https://facebook.com/canopymedicalclinic">
+                Message us on Facebook
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="bundle.js"></script>
